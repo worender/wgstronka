@@ -31,6 +31,8 @@ a{
     padding: 20px 0;
 }
 
+
+
 a:hover{
     background-color: #63FFC1;
 }
@@ -55,5 +57,25 @@ a:hover{
 
 .main a:hover{
     background-color: #63FFC1;
+}
+
+.lab3{
+    width: 60%;
+    margin: auto;
+    
+}
+
+.lab3 a{
+
+    margin: 10px; 
+    border-radius: 20px;
+    padding: 30px 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px 0 gray;
+}
+
+.lab3 a:hover{
+    background-color: #63FFC1;
+    
 }
 

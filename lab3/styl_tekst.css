@@ -1,0 +1,59 @@
+body{ 
+font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    background-color: white;
+    text-align: justify;
+    margin: 0px;
+    
+}
+
+
+header{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #53CFA5;
+    box-shadow: 0px 0px 10px 0px #53CFA5;
+    min-width: 700px;
+    
+}
+
+header a{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-color: #9ff7d9;
+    text-decoration: none;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+header a:hover{
+    background-color: #63FFC1;
+    
+}
+
+
+#tabela{
+    width: 80%;
+    min-width: 700px;
+    margin: 0 auto;
+}
+
+.WierszTabeli{
+    display: flex;
+}
+
+.WierszTabeli span{
+    width: auto;
+    margin: 15px;
+    padding: 20px;
+    text-align: justify;
+    box-shadow: 0px 0px 10px 0px gray;
+    border-radius: 20px;
+    background-color: rgb(227, 255, 227);
+}
