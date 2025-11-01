@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Wojciecha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <input type="button" id="OpenCloseMenu" value="<" onclick="opencloseMENU()">
+
+        <h1>Laboratorium 4</h1>
+    </header>
+    <div class="content">
+        <div class=menu>
+        
+            <a href="index.html">Laboratorium 1</a>
+            <a href="lab2.html">Laboratorium 2</a>
+            <a href="lab3.html">Laboratorium 3</a>
+            <a href="lab4.html">Laboratorium 4</a>
+            <a href="index.html">Laboratorium 5</a>
+            <a href="index.html">Laboratorium 6</a>
+            <a href="index.html">Laboratorium 7</a>
+            <a href="index.html">Laboratorium 8</a>
+           
+        </div>
+
+            <div class="main">
+            <div id="kalkulator">
+                <div id="wyswietlacz" class="wiersze">
+                    <input type="text" id="cDisplay" disabled>
+                    <button id="bC" onclick="kliknietoCyfreDzialanie(this)">C</button>
+                </div>
+                <div id="wiersz1" class="wiersze">
+                        <button id="c7" onclick="kliknietoCyfreDzialanie(this)">7</button>
+                        <button id="c8" onclick="kliknietoCyfreDzialanie(this)">8</button>
+                        <button id="c9" onclick="kliknietoCyfreDzialanie(this)">9</button>
+                        <button id="c/" onclick="kliknietoCyfreDzialanie(this)">/</button>
+                </div>
+                <div id="wiersz2" class="wiersze">
+                    <button id="c4" onclick="kliknietoCyfreDzialanie(this)">4</button>
+                    <button id="c5" onclick="kliknietoCyfreDzialanie(this)">5</button>
+                    <button id="c6" onclick="kliknietoCyfreDzialanie(this)">6</button>
+                    <button id="c*" onclick="kliknietoCyfreDzialanie(this)">*</button>
+                </div>
+                <div id="wiersz3" class="wiersze">
+                        <button id="c1" onclick="kliknietoCyfreDzialanie(this)">1</button>
+                        <button id="c2" onclick="kliknietoCyfreDzialanie(this)">2</button>
+                        <button id="c3" onclick="kliknietoCyfreDzialanie(this)">3</button>
+                        <button id="c-" onclick="kliknietoCyfreDzialanie(this)">-</button>
+                </div>
+                <div id="wiersz4" class="wiersze">
+                    <button id="c0" onclick="kliknietoCyfreDzialanie(this)">0</button>
+                    <button id="c." onclick="kliknietoCyfreDzialanie(this)">.</button>
+                    <button id="c=" onclick="kliknietoCyfreDzialanie(this)">=</button>
+                    <button id="c+" onclick="kliknietoCyfreDzialanie(this)">+</button>
+                </div>
+
+
+            
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
