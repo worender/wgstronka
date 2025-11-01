@@ -38,6 +38,7 @@ a:hover{
 }
 
 .menu{
+    display: block;
     width: 40%;
     max-width: 250px;
 }
@@ -47,6 +48,7 @@ a:hover{
 }
 
 .main{
+    align-items: center;
     width: 60%;
     margin: auto;
 }
@@ -79,3 +81,75 @@ a:hover{
     
 }
 
+/* BUTTON OPEN/CLOSE MENU */
+
+#OpenCloseMenu{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-color: #9ff7d9;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 20px;
+    color: black;
+    font-weight: bold;
+    border: 0;
+}
+
+
+
+
+
+/* KALKULATOR */
+
+#kalkulator{
+
+    width: 85%;
+    max-width: 400px;
+    margin: auto;
+    border: 0px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color:  #1a1a1a;
+    padding: 20px;
+}
+
+.wiersze{
+    display: grid;  
+    justify-content: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 5px;
+} 
+
+#kalkulator #cDisplay{
+    grid-column: 1/ span 3;
+    margin: 5px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #565656;
+    text-align: right;
+    color: white;
+    font-size: 30px;
+
+
+   
+}
+
+#kalkulator button{
+    /* max-width: 50px; */
+    margin: 5px;
+   flex: 1 1 0;
+   aspect-ratio: 1.2/1;
+    font-size: 30px;
+    border-radius: 5px;
+    border: 0px solid black;
+    background-color: #333333;
+    color: white;
+}
+
+#kalkulator button:hover{
+    background-color: #150073;
+    cursor: pointer;
+
+
+}
