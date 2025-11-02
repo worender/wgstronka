@@ -21,7 +21,7 @@ function kliknietoCyfreDzialanie(button) {
    
    if (displayVL == 0) {
 
-         if (!(button.innerText == '.' || button.innerText == '+' || button.innerText == '-' || button.innerText == '*' || button.innerText == '/')) {
+         if (!(button.innerText == '.' || button.innerText == '+' || button.innerText == '*' || button.innerText == '/')) {
             display.value += button.innerText;
             return;
          }
