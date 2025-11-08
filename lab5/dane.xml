@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="lab5.xsl"?>
+<bill>
+    <customer>
+        <name>John Doe</name>
+        <address>123 Main St, Anytown, USA</address>
+        <phone>555-1234</phone>
+    </customer>
+    <items>
+        <item>
+            <description>Widget A</description>
+            <quantity>2</quantity>
+            <price>19.99</price>
+        </item>
+        <item>
+            <description>Widget B</description>
+            <quantity>1</quantity>
+            <price>29.99</price>
+        </item>
+        <item>
+            <description>Widget C</description>
+            <quantity>3</quantity>
+            <price>9.99</price>
+        </item>
+    </items>
+    <total>99.95</total>
+    <date>2024-06-15</date>
