@@ -1,27 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="lab5.xsl"?>
-<bill>
-    <customer>
-        <name>John Doe</name>
-        <address>123 Main St, Anytown, USA</address>
-        <phone>555-1234</phone>
-    </customer>
-    <items>
-        <item>
-            <description>Widget A</description>
-            <quantity>2</quantity>
-            <price>19.99</price>
-        </item>
-        <item>
-            <description>Widget B</description>
-            <quantity>1</quantity>
-            <price>29.99</price>
-        </item>
-        <item>
-            <description>Widget C</description>
-            <quantity>3</quantity>
-            <price>9.99</price>
-        </item>
-    </items>
-    <total>99.95</total>
-    <date>2024-06-15</date>
+<faktura>
+    <dane>
+        <nrFaktury>FV/2024/06/021</nrFaktury>
+        <dataWystawienia>2025-11-10</dataWystawienia>
+        <miejscowosc>Warszawa</miejscowosc>
+        <sprzedawca>
+            <podatnik>WGPaper Sp. z o.o.</podatnik>
+            <adres>
+                <ulica>ul. Różana 1</ulica>
+                <kodPocztowy>02-701</kodPocztowy>
+                <miasto>Warszawa</miasto>
+            </adres>
+            <nip>563-456-78-90</nip>
+        </sprzedawca>
+        <nabywca>
+            <nazwa>Jan Kowalski</nazwa>
+            <adres>
+                <ulica>ul. Lipowa 5</ulica>
+                <kodPocztowy>05-400</kodPocztowy>
+                <miasto>Otwock</miasto>
+            </adres>
+            <nip>723-456-32-68</nip>
+        </nabywca>
+        <zamowienie>
+            <nr>ZAM/30</nr>
+            <zdnia>2025-11-7</zdnia>
+        </zamowienie>
+        <sposobPlatnosci>Przelew 14 dni</sposobPlatnosci>
+        <terminPlatnosci>2025-11-24</terminPlatnosci>
+        <nrRachunku>12 3456 7890 1234 5678 9012 3456</nrRachunku>
+    </dane>
+    <towarUslugi>
+        <pozycja>
+            <lp>1</lp>
+            <nazwa>Długopis Bic</nazwa>
+            <ilosc>10</ilosc>
+            <jednostka>szt.</jednostka>
+            <cenaNetto>5.99</cenaNetto>
+            <wartoscNetto>59.90</wartoscNetto>
+            <stawkaVAT>23%</stawkaVAT>
+            <kwotaVAT>13.78</kwotaVAT>
+            <wartoscBrutto>73.68</wartoscBrutto>
+            <wartoscBrutto>7456546464.68</wartoscBrutto>
+        </pozycja>
+        <pozycja>
+            <lp>2</lp>
+            <nazwa>Ryza papieru A4</nazwa>
+            <ilosc>11</ilosc>
+            <jednostka>szt.</jednostka>
+            <cenaNetto>19.99</cenaNetto>
+            <wartoscNetto>219.89</wartoscNetto>
+            <stawkaVAT>23%</stawkaVAT>
+            <kwotaVAT>50.57</kwotaVAT>
+            <wartoscBrutto>270.46</wartoscBrutto>
+        </pozycja>
+        <pozycja>
+            <lp>3</lp>
+            <nazwa>Zeszyt 16 kartkowy</nazwa>
+            <ilosc>5</ilosc>
+            <jednostka>szt.</jednostka>
+            <cenaNetto>3.49</cenaNetto>
+            <wartoscNetto>17.45</wartoscNetto>
+            <stawkaVAT>23%</stawkaVAT>
+            <kwotaVAT>4.01</kwotaVAT>
+            <wartoscBrutto>21.46</wartoscBrutto>
+        </pozycja>
+        <pozycja>
+            <lp>4</lp>
+            <nazwa>Segregator A4</nazwa>
+            <ilosc>2</ilosc>
+            <jednostka>szt.</jednostka>
+            <cenaNetto>12.99</cenaNetto>
+            <wartoscNetto>25.98</wartoscNetto>
+            <stawkaVAT>23%</stawkaVAT>
+            <kwotaVAT>5.98</kwotaVAT>
+            <wartoscBrutto>31.96</wartoscBrutto>
+        </pozycja>
+       
+    </towarUslugi>
+</faktura>
