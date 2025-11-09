@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:output method="html" encoding="UTF-8"/>
 
 <xsl:template match="/">
     <html>
@@ -13,9 +12,9 @@
                     <th>Element Name</th>
                     <th>Element Value</th>
                 </tr>
-                <xsl:for-each select="bill">
+                <xsl:for-each select="bill/customer">
                     <tr>
-                        <td><xsl:value-of select="customer/name"/></td>
+                        <td><xsl:value-of select="name"/></td>
                         
                     </tr>
                 </xsl:for-each>
