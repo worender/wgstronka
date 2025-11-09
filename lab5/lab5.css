@@ -1,0 +1,259 @@
+#faktura{
+    width: 1000px;
+}
+
+body{
+    
+    justify-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+#foto{
+    position: relative;
+}
+
+#dane{
+    text-align: left;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1000px;
+    height: 1000px;
+}
+
+.colordane{
+    background-color: rgb(0, 245, 12, 0.0);
+}
+
+#nrfaktury{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    top: 95px;
+    left: 380px;
+    width: 180px;
+    height: 40px;
+}
+
+.data{
+    /* background-color: rgb(0, 245, 12, 0.5); */
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#datawystawienia1{      top: 80px;  left: 757px;}
+#datawystawienia2{     top: 80px;  left: 783px;}
+#datawystawienia3{     top: 80px;  left: 813px;}
+#datawystawienia4{     top: 80px;  left: 839px;}
+#datawystawienia5{     top: 80px;  left: 900px;}
+#datawystawienia6{     top: 80px;  left: 926px;}
+
+
+
+#miejscowoscWystawienia{
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-items: center;    
+    top: 45px;
+    left: 665px;
+    width: 300px;
+    height: 20px;
+}
+
+#nabywcaNazwa{
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-items: center;    
+    top: 180px;
+    left: 250px;
+    width: 600px;
+    height: 20px;
+}
+
+#nabywcaAdres{
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-items: center;    
+    top: 215px;
+    left: 140px;
+    width: 600px;
+    height: 20px;
+}
+
+#nabywcaNip{
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-items: center;    
+    top: 255px;
+    left: 140px;
+    width: 210px;
+    height: 20px;
+}
+
+
+#sprzedawcaNazwa{
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-items: center;    
+    top: 40px;
+    left: 90px;
+    width: 250px;
+    height: 20px;
+}
+
+#sprzedawcaAdres{
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-items: center;    
+    top: 95px;
+   left: 90px;
+   width: 250px;
+    height: 20px;
+}
+
+#sprzedawcaNip{
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-items: center;    
+    top: 125px;
+   left: 110px;
+    width: 250px;
+    height: 20px;
+}
+
+#towarnazwa{
+    position: absolute;
+    justify-content: left;  
+    top: 345px;
+   left: 80px;
+    width: 230px;
+    height: 260px;
+}
+
+#towarnazwa td{
+   
+    width: 230px;
+    height: 26px;
+}
+
+#towarilosc{
+    position: absolute;
+    justify-content: left;  
+    top: 345px;
+   left: 450px;
+    width: 50px;
+    height: 260px;
+}
+
+#towarilosc td{
+    
+    width: 50px;
+    height: 26px;
+}
+
+#towarCenaJednostkowaZL{
+    position: absolute;
+    justify-content: left;  
+    top: 345px;
+   left: 510px;
+    width: 50px;
+    height: 260px;
+}
+
+#towarCenaJednostkowaZL td{
+    
+    width: 50px;
+    height: 26px;
+}
+
+#towarWNetto{
+    position: absolute;
+    justify-content: left;  
+    top: 345px;
+   left: 610px;
+    width: 50px;
+    height: 260px;
+}
+
+#towarWNetto td{
+   
+    width: 50px;
+    height: 26px;
+}
+
+#towarpodatek{
+    position: absolute;
+    justify-content: left;  
+    top: 345px;
+   left: 760px;
+    width: 50px;
+    height: 260px;
+}
+
+#towarpodatek td{
+    
+    width: 50px;
+    height: 26px;
+}
+
+#towarWbrutto{
+    position: absolute;
+    justify-content: left;  
+    top: 345px;
+   left: 860px;
+    width: 100px;
+    height: 260px;
+}
+
+#towarWbrutto td{
+    
+    width: 100px;
+    height: 26px;
+}
+
+
+#suma{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    top: 715px;
+   left: 120px;
+   width: 100px;
+    height: 20px;
+}
+
+#suma2{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    top: 715px;
+   left: 250px;
+   width: 40px;
+    height: 20px;
+}
+
+#daneSposobPlatnosci{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    top: 615px;
+   left: 120px;
+   width: 220px;
+    height: 20px;
+}
