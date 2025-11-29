@@ -1,0 +1,40 @@
+ div.rekord:nth-child(16n+1), 
+ div.rekord:nth-child(16n+2), 
+ div.rekord:nth-child(16n+3), 
+ div.rekord:nth-child(16n+4), 
+ div.rekord:nth-child(16n+5), 
+ div.rekord:nth-child(16n+6), 
+ div.rekord:nth-child(16n+7), 
+ div.rekord:nth-child(16n+8) {
+    background-color: #ececec;  
+
+}
+
+ div.rekord:nth-child(1),
+  div.rekord:nth-child(2), 
+   div.rekord:nth-child(3), 
+   div.rekord:nth-child(4), 
+   div.rekord:nth-child(5), 
+   div.rekord:nth-child(6), 
+   div.rekord:nth-child(7), 
+   div.rekord:nth-child(8) {
+    font-weight: bold; 
+    background-color: #d4d4d4;  
+}
+
+div.rekord8 {
+   grid-column: span 8;
+   width: 100%;
+}
+
+.gridc {
+    display: grid; 
+    grid-template-columns: repeat(8, auto); 
+    gap: 0 auto;
+}
+
+.gridc div.rekord {
+    margin: 0;
+    padding: 5px 0;
+}
+
