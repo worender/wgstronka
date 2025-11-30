@@ -7,7 +7,7 @@
     <title>Baza danych</title>
 </head>
 <body>
-
+  
 <?php
 
 $servername = "localhost";
@@ -22,7 +22,7 @@ try {
 
 if(isset($_POST['idUsun'])){
   $idUsun = $_POST['idUsun'];
-   $query = $conn->prepare("DELETE FROM dane WHERE id = :id");
+  $query = $conn->prepare("DELETE FROM dane WHERE id = :id");
   $query->bindParam(':id', $idUsun, PDO::PARAM_INT);
   $query->execute();
 
@@ -89,7 +89,7 @@ if(isset($_POST['idZapisz'])){
   $query->bindParam(':nazwisko', $nazwisko, PDO::PARAM_STR);
   $query->bindParam(':wiek', $wiek, PDO::PARAM_INT);
   $query->bindParam(':email', $email, PDO::PARAM_STR);
-  $query->bindParam(':telefon', $telefon, PDO::PARAM_STR);
+  $query->bindParam(':telefon', $telefon, PDO::PARAM_INT);
   $query->bindParam(':plec', $plec, PDO::PARAM_STR);
   $query->bindParam(':id', $idZapisz, PDO::PARAM_INT);
   $query->execute();
@@ -113,12 +113,11 @@ foreach ($results as $wiersz) {
           <div class='rekord'><input type='text' name='nazwiskoEdycja' form='form$id' value='$nazwisko'></div>
           <div class='rekord'><input type='number' name='wiekEdycja' form='form$id' value='$wiek'></div>
           <div class='rekord'><input type='email' name='emailEdycja' form='form$id' value='$email'></div>
-          <div class='rekord'><input type='text' name='telefonEdycja' form='form$id' value='$telefon'></div>
+          <div class='rekord'><input type='number' name='telefonEdycja' form='form$id' value='$telefon' pattern='[0-9]{9}'></div>
           <div class='rekord'>
             <select name='plecEdycja' form='form$id'>
               <option value='Mężczyzna'" . ($plec == 'Mężczyzna' ? ' selected' : '') . ">Mężczyzna</option>
               <option value='Kobieta'" . ($plec == 'Kobieta' ? ' selected' : '') . ">Kobieta</option>
-              <option value='Inna'" . ($plec == 'Inna' ? ' selected' : '') . ">Inna</option>
             </select>
           </div>
           <div class='rekord'>
@@ -160,6 +159,6 @@ echo "<button onclick='pokazFormularz(this)'>Dodaj</button>";
 
 echo "<script src='lab7.js'></script>";
 ?>
-    
+    <a href="WojciechGuziewski.txt" >Plik z kodem php.</a> 
 </body>
 </html>
