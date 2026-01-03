@@ -12,6 +12,7 @@
     <button class="producer-button" onClick="filterByProducer('Dell')">Dell</button>
     <button class="producer-button" onClick="filterByProducer('HP')">HP</button>
     <button class="producer-button" onClick="filterByProducer('Acer')">Acer</button>
+    <a href="index.txt">Kod żródłowy</a>
     </div>
     
 <script>
@@ -43,10 +44,10 @@ if(isset($_COOKIE['producer'])){
             $url = $urlAcer;
             break;
         default:
-            $url = $urlApple; // Domyślny URL
+            $url = $urlApple;
     }
 } else {
-    $url = $urlApple; // Domyślny URL
+    $url = $urlApple; 
 }
 
 $options = [
