@@ -12,7 +12,7 @@ body {
     padding: 20px;
 }
 
-/* Pasek przycisków u góry */
+
 button {
     margin: 0 8px 18px 0;
     padding: 8px 18px;
@@ -37,7 +37,33 @@ button:active {
     box-shadow: none;
 }
 
-/* Lista produktów w jednej kolumnie, prawie cała szerokość */
+#przyciski a {
+    margin: 0 8px 18px 0;
+    padding: 8px 18px;
+    border-radius: 999px;
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    color: #111827;
+    transition: background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease, transform 0.1s ease;
+    text-decoration: none;
+}
+
+#przyciski a:hover {
+    background: #2563eb;
+    color: #ffffff;
+    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.18);
+    transform: translateY(-1px);
+    
+}
+
+#przyciski a:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+
 .product {
     max-width: 900px;
     margin: 0 auto 16px auto;
