@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style1.css">
+    <title>Logowanie</title>
+</head>
+<body>
+    <div class="container">
+        <div class="Logowanie">
+    <h1>Logowanie1</h1>
+    <form action="spr.php" method="post" pattern=".{1,50}">
+        <label for="username">Nazwa użytkownika:</label><br>
+        <input type="text" id="username" name="username" required value="WojtekGuz" maxlength="50"><br>
+        
+        <label for="password">Hasło:</label><br>
+        <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-ząęćłńóśźż])(?=.*[A-ZĄĘĆŁŃÓŚŹŻ])(?=.*[\W_]).{8,100}"  value="Trudn3hasło" maxlength="100" required><br>
+        
+        <input type="submit" value="Zaloguj się">
+    </form>
+    </div>
+    
+    <div class="Rejestracja">
+    <h1>Rejestracja</h1>
+    <form action="rejestracja.php" method="post">
+        
+        <label for="new_username">Nazwa użytkownika:</label><br>
+        <input type="text" id="new_username" name="new_username" pattern=".{1,50}" value="Anna123" maxlength="50"required><br>
+        <label for="new_password">Hasło:</label><br>
+        <input type="password" id="new_password" name="new_password" pattern="(?=.*\d)(?=.*[a-ząęćłńóśźż])(?=.*[A-ZĄĘĆŁŃÓŚŹŻ])(?=.*[\W_]).{8,100}" maxlength="100" value="Trudn3hasło" required><span>Duża litera, mała litera, cyfra, znak specjalny</span><br>
+        <label for="imie">Imię:</label><br>
+        <input type="text" id="imie" name="imie" pattern="^[A-ZĄĘĆŁŃÓŚŹŻ]{1}[a-ząęćłńóśźż]{1,49}$" value="Anna" maxlength="50" required><br>
+        <label for="nazwisko">Nazwisko:</label><br>
+        <input type="text" id="nazwisko" name="nazwisko" pattern="^[A-ZĄĘĆŁŃÓŚŹŻ]{1}[a-ząęćłńóśźż]{1,49}$" value="Nowak" maxlength="50" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" pattern="[A-ZĄĘĆŁŃÓŚŹŻa-ząęćłńóśźż0-9.]+@+[A-ZĄĘĆŁŃÓŚŹŻa-ząęćłńóśźż0-9]+(\.[A-ZĄĘĆŁŃÓŚŹŻa-ząęćłńóśźż]+)+" value="anna.nowak@example.com" maxlength="100" required><span>np. jan.kowalski@example.xxx.com</span><br>
+        
+        <input type="submit" value="Zarejestruj się">
+    </form>
+    </div>
+    </div>
+</body>
+</html>
